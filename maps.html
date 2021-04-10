@@ -1,7 +1,7 @@
 <html>
 	<head>
     <meta charset="UTF-8">
-		<title>Maps</title>
+		<title>Recycling Map</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -13,61 +13,64 @@
 				<h1>Alter Eco</h1>
 				<ul>
 					<li><a href="homepage.html">Home</a></li>
-					<li><a class="active" href="maps.html">Maps</a></li>
+					<li><a class="active" href="maps.html">Recycling Map</a></li>
 					<li><a href="eco_friendly.html">Eco Tips & Tricks</a></li>
 					<li><a href="recycle.html">Recycling in Iowa</a></li>
           <li><a href="team.html">Our Team</a></li>
 				</ul>
 			</div>
 			<div class = "content">
-        <div class="recycling-search">
-          <div id="findrecycling">Find recycling sites in:</div>
-    
-          <div id="locationField">
-            <input id="autocomplete" placeholder="Enter a city" type="text" />
-          </div>
-    
-          <div id="controls">
-            <select id="state">
-              <option value="all">All</option>
-              <option value="ia">Iowa</option>
-            </select>
-          </div>
-        </div>
+        
     
         <!-- div for map display-->
         <div id = "map"></div>
-        <!-- div for recycling site info-->
-        <div id="info-content">
-          <table>
-            <tr id="iw-url-row" class="iw_table_row">
-              <td id="iw-icon" class="iw_table_icon"></td>
-              <td id="iw-url"></td>
-            </tr>
-            <tr id="iw-address-row" class="iw_table_row">
-              <td class="iw_attribute_name">Address:</td>
-              <td id="iw-address"></td>
-            </tr>
-            <tr id="iw-phone-row" class="iw_table_row">
-              <td class="iw_attribute_name">Telephone:</td>
-              <td id="iw-phone"></td>
-            </tr>
-            <tr id="iw-rating-row" class="iw_table_row">
-              <td class="iw_attribute_name">Rating:</td>
-              <td id="iw-rating"></td>
-            </tr>
-            <tr id="iw-website-row" class="iw_table_row">
-              <td class="iw_attribute_name">Website:</td>
-              <td id="iw-website"></td>
-            </tr>
-          </table>
-        </div>
+        <div class="results">
+          <div class="recycling-search">
+            <div id="findrecycling">Find recycling sites in:</div>
+      
+            <div id="locationField">
+              <input id="autocomplete" placeholder="Enter a city" type="text" />
+            </div>
+      
+            <div id="controls">
+              <select id="state">
+                <option value="all">All</option>
+                <option value="ia">Iowa</option>
+              </select>
+            </div>
+          </div>
+          <!-- div for recycling site info-->
+          <div id="info-content">
+            <table>
+              <tr id="iw-url-row" class="iw_table_row">
+                <td id="iw-icon" class="iw_table_icon"></td>
+                <td id="iw-url"></td>
+              </tr>
+              <tr id="iw-address-row" class="iw_table_row">
+                <td class="iw_attribute_name">Address:</td>
+                <td id="iw-address"></td>
+              </tr>
+              <tr id="iw-phone-row" class="iw_table_row">
+                <td class="iw_attribute_name">Telephone:</td>
+                <td id="iw-phone"></td>
+              </tr>
+              <tr id="iw-rating-row" class="iw_table_row">
+                <td class="iw_attribute_name">Rating:</td>
+                <td id="iw-rating"></td>
+              </tr>
+              <tr id="iw-website-row" class="iw_table_row">
+                <td class="iw_attribute_name">Website:</td>
+                <td id="iw-website"></td>
+              </tr>
+            </table>
+          </div>
 
-        <div id="listing">
-          <table id="resultsTable">
-            <tbody id="results"></tbody>
-          </table>
-        </div>
+          <div id="listing">
+            <table id="resultsTable">
+              <tbody id="results"></tbody>
+            </table>
+          </div>
+      </div>
 
   
         </div>
