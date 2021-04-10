@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  *  Color palette:
  *  #69BE94 - Eco green
@@ -257,4 +258,265 @@
         100% {
         transform:translateX(25%);
         }
+=======
+/*
+ *  Color palette:
+ *  #69BE94 - Eco green
+ *  #4a8573 - Eco green - dark
+ *  #6990be - Blue
+ *  #75BE69 - Fern
+ *  #52854A - Artichoke
+ */
+
+ /* Page wrapper and content divs */
+    .wrapper 
+    {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .content 
+    {
+        background-color: #fff;
+        opacity: 1.00;
+        height: 75%;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+ /* Navbar style */
+    .navbar ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#4a8573
+    }
+
+    .navbar li
+    {
+        float: left;
+    }
+
+    .navbar li a
+    {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        font-weight:bold;
+    }
+    .navbar h1
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align:center;
+    }
+
+    .navbar li a:hover 
+    {
+        background-color: #75be69;
+    }
+
+    .navbar .active 
+    {
+        background-color: #6990be
+    }
+
+/* Maps page */
+    #map 
+    {
+        height: 90%;
+        width: 100%;
+        opacity: 1.00;
+    }
+
+
+    .recycling-search
+    {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 440px;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    #listing 
+    {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+    }
+
+    #findrecycling 
+    {
+        font-size: 14px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+      
+    #locationField 
+    {
+        -webkit-box-flex: 1 1 190px;
+        -ms-flex: 1 1 190px;
+        flex: 1 1 190px;
+        margin: 0 8px;
+    }
+      
+    #controls 
+    {
+        -webkit-box-flex: 1 1 140px;
+        -ms-flex: 1 1 140px;
+        flex: 1 1 140px;
+    }
+      
+    #autocomplete 
+    {
+        width: 100%;
+    }
+      
+    #state 
+    {
+        width: 100%;
+    }
+      
+    .placeIcon 
+    {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+    }
+      
+    .recycleIcon 
+    {
+        width: 24px;
+        height: 24px;
+    }
+      
+    #resultsTable 
+    {
+        border-collapse: collapse;
+        width: 240px;
+    }
+      
+    #rating 
+    {
+      font-size: 13px;
+        font-family: Arial Unicode MS;
+    }
+      
+      .iw_table_row 
+    {
+        height: 18px;
+    }
+      
+      .iw_attribute_name 
+    {
+        font-weight: bold;
+        text-align: right;
+    }
+      
+      .iw_table_icon 
+    {
+        text-align: right;
+    }
+      
+
+/* Flip card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: left;
+    margin-right: auto;
+  }
+  /* .flip-card2 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: right;
+  } */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #29b96a;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+/* Sliding Diagonals Background Effect by Chris Smith */
+
+    .bg {
+        animation:slide 60s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #6990be 50%, #75be69 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+    }
+    
+    .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:70s;
+    }
+    
+    .bg3 {
+        animation-duration:90s;
+    }
+
+    @keyframes slide 
+    {
+        0% {
+        transform:translateX(-25%);
+        }
+        100% {
+        transform:translateX(25%);
+        }
+>>>>>>> 21a0a7d0bacfcdb1e4e1d1e02211039584e8d3f8
     }
