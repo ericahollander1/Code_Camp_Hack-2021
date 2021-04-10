@@ -43,6 +43,9 @@ function initMap()
             componentRestrictions: countryRestrict,
         }
     );
+
+
+    
     places = new google.maps.places.PlacesService(map);
     autocomplete.addListener("place_changed", onPlaceChanged);
 
