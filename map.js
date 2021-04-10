@@ -9,7 +9,7 @@ const MARKER_PATH = "https://developers.google.com/maps/documentation/javascript
 var request = 
 {
     query: 'recycling',
-    fields : ['name', 'geometry', ],
+    fields : ['name', 'geometry'],
 };
 
 const hostnameRegexp = new RegExp("^https?://.+?/")
@@ -44,8 +44,6 @@ function initMap()
         }
     );
 
-
-    
     places = new google.maps.places.PlacesService(map);
     autocomplete.addListener("place_changed", onPlaceChanged);
 
