@@ -86,7 +86,7 @@ body{
 .row {
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-size: 18pt;
 }
 
 /* Bios page */
@@ -123,6 +123,10 @@ body{
     width: 100%;
 }
 
+.info{
+    width: 60%;
+    margin: 0 auto;
+}
 
 
 /* Maps page */
