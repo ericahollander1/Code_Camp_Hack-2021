@@ -1,70 +1,181 @@
-body {
-    background-color: white;
-    text-align: center;
-  }
-  h1 {
-    color: rgb(42, 48, 131);
-  }
-  h3{
-      color: black;
-  }
-  p {
-    color: black;
-  }
-.divblue {
-    background-color: rgb(42, 48, 131);
-    color: white;
-    height: 45px;
-    text-align: left;
-    padding:10px 10px;
-    margin: -10px -10px;
-}
-.divpurple img {
-  float: left;
-  width: 35px;
-  height: 35px;
+/*
+ *  Color palette:
+ *  #69BE94 - Eco green
+ *  #4a8573 - Eco green - dark
+ *  #6990be - Blue
+ *  #75BE69 - Fern
+ *  #52854A - Artichoke
+ */
 
-}
+ /* Page wrapper and content divs */
+    .wrapper 
+    {
+        max-width: 80%;
+        margin: auto;
+    }
 
-.divblue h2 {
-  position: relative;
-  top: -15px;
-  font-size: 30px;
-  left: 10px;
-  /*font-family: "Monaco", monospace; */
-  font-family: "Garamond", serif; 
-  
-}
-.navbar {
-  overflow: hidden;
-  background-color: rgb(42, 48, 131);
-  border: 8px solid rgba(80, 120, 231, 0.75);
-  margin: 10px -10px;
-  padding: 0;
-}
+    .content 
+    {
+        background-color: #fff;
+        opacity: 1.00;
+        height: 75%;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 10px;
+    }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  background-color: rgb(42, 48, 131);
-  /* border: 1px solid rgba(132, 112, 194, 0.75); */
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-}
+ /* Navbar style */
+    .navbar ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#4a8573
+    }
 
-.navbar a:hover{
-  background-color: rgba(80, 120, 231, 0.75);
-}
+    .navbar li
+    {
+        float: left;
+    }
 
-img {
-    display: block;
-  margin-left: left;
-  margin-right: auto;
-}
+    .navbar li a
+    {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        font-weight:bold;
+    }
+    .navbar h1
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align:center;
+    }
+
+    .navbar li a:hover 
+    {
+        background-color: #75be69;
+    }
+
+    .navbar .active 
+    {
+        background-color: #6990be
+    }
+
+/* Maps page */
+    #map 
+    {
+        height: 90%;
+        width: 100%;
+        opacity: 1.00;
+    }
 
 
+    .recycling-search
+    {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 440px;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    #listing 
+    {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+    }
+
+    #findrecycling 
+    {
+        font-size: 14px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+      
+    #locationField 
+    {
+        -webkit-box-flex: 1 1 190px;
+        -ms-flex: 1 1 190px;
+        flex: 1 1 190px;
+        margin: 0 8px;
+    }
+      
+    #controls 
+    {
+        -webkit-box-flex: 1 1 140px;
+        -ms-flex: 1 1 140px;
+        flex: 1 1 140px;
+    }
+      
+    #autocomplete 
+    {
+        width: 100%;
+    }
+      
+    #state 
+    {
+        width: 100%;
+    }
+      
+    .placeIcon 
+    {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+    }
+      
+    .recycleIcon 
+    {
+        width: 24px;
+        height: 24px;
+    }
+      
+    #resultsTable 
+    {
+        border-collapse: collapse;
+        width: 240px;
+    }
+      
+    #rating 
+    {
+      font-size: 13px;
+        font-family: Arial Unicode MS;
+    }
+      
+      .iw_table_row 
+    {
+        height: 18px;
+    }
+      
+      .iw_attribute_name 
+    {
+        font-weight: bold;
+        text-align: right;
+    }
+      
+      .iw_table_icon 
+    {
+        text-align: right;
+    }
+      
+
+/* Flip card */
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -113,3 +224,37 @@ img {
     color: white;
     transform: rotateY(180deg);
   }
+
+
+/* Sliding Diagonals Background Effect by Chris Smith */
+
+    .bg {
+        animation:slide 60s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #6990be 50%, #75be69 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+    }
+    
+    .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:70s;
+    }
+    
+    .bg3 {
+        animation-duration:90s;
+    }
+
+    @keyframes slide 
+    {
+        0% {
+        transform:translateX(-25%);
+        }
+        100% {
+        transform:translateX(25%);
+        }
+    }
