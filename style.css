@@ -66,6 +66,26 @@
         background-color: #6990be
     }
 
+/* Bios page */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 240px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2 px 16px;
+}
+
+.card img {
+    width: 100%;
+}
+
 /* Maps page */
     #map 
     {
