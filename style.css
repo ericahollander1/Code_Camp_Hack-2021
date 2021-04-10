@@ -66,10 +66,19 @@
         background-color: #6990be
     }
 
+/* Home Page */
+
+.row {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
 /* Bios page */
 
 .bios {
    text-align: center;
+   
 }
 
 .card {
